@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content='Fratelli Resto Bar'>
+  <meta name="keywords" content="Fratelli Resto Bar">
+  <link rel="stylesheet" href="../css/style_contacte.css" type="text/css">
+  <link rel="icon" type="image/png" href="../img/Logo fratelli.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+  <title>Fratelli RestoBar - Contacte</title>
+</head>
+
+<body>
+  <div class="header">
+    <a href="../index.html"><img src="../img/Logo fratelli.png" class="logo"></a>
+    <nav>
+      <ul>
+        <li><a href="despre-noi.html">Despre noi</a></li>
+        <li><a href="oferte.html">Oferte</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+
+      </ul>
+    </nav>
+  </div>
+
+
+
+
+  <div class="main">
+
+    <div class="info">
+
+      <h1>Contacte:</h1>
+
+      <div class="box">
+        <p><b>Nr. de telefon: </b> <i class="fas fa-phone-volume"> </i>   +37379994010</p>
+        <p><b>Email: </b><i class="fas fa-envelope"></i>  grand.horeca@mail.ru</p>
+        <p><b>Adresa fizică: </b> <i class="fas fa-home"></i>  Bd. Dacia 28/4, Chisinau, Republica Moldova</p>
+      </div>
+      <div class="info2">
+        <video src="../resources/Y2Mate.is - Cafe Fratelli RestoBar-_6gidGANhWM-720p-1654503965376.mp4" autoplay muted
+          loop class="video"></video>
+      </div>
+
+
+    </div>
+
+    <div class="map">
+      <fieldset>
+        <legend>Pentru a ne găsi mai ușor consultați harta:</legend>
+
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3962.040167995292!2d28.85939878664183!3d46.98467994315317!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x689cac41cb6557c7!2sFratelli%20RestoBar!5e0!3m2!1sro!2s!4v1676418051867!5m2!1sro!2s"
+        width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    </fieldset>
+      
+    </div>
+
+    <div class="goal-contacts">
+
+      <div class="contacts">
+        <h1 class="centered">
+          <p>Trimite-ne un mesaj:</p>
+        </h1>
+        <form autocomplete="off" id="form" method="post" class="reveal-form">
+          <input type="text" placeholder="Nume *" required class="field" id="name">
+          <input type="email" placeholder="Email *" required class="field" id="email">
+          <textarea placeholder="Mesaj" rows="6" class="field" id="body"></textarea>
+          <input type="button" value="Trimite" onclick="sendEmail()" class="button">
+        </form>
+      </div>
+      </br>
+    </div>
+  </div>
+
+  <div class="footer">
+    <img src="../img/Logo fratelli.png" id="logo-img">
+    <h2>Fratelli RestoBar ©️</h2>
+    <p>2023</p>
+    <marquee>
+      <p>
+        &copy; Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” organizată de proiectul
+        ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului.
+      </p>
+    </marquee>
+    <div class="icons">
+      <a href="https://www.facebook.com/profile.php?id=100077407460018" target="_blanck">
+        <img src="../img/facebook-brands.svg" id="icon">
+      </a>
+      <a href="https://www.instagram.com/restobar_fratelli/" target="_blanck">
+        <img src="../img/instagram-brands.svg" id="icon">
+      </a>
+    </div>
+  </div>
+ 
+  <script src="../js/despre_noi.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>
