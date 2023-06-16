@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+  
+::-webkit-scrollbar-thumb {
+    background: #57606f;
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #2f3542;
+}
+
+/*HEADER STYLING*/
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 0 0 50px;
+    background-color: #9c764bd6;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px #535c68;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 23;
+}
+
+.header .logo {
+    height: 85px;
+    margin: 5px 0 10px 20px;
+    border-radius: 50%;
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 100px;
+    margin: 0 100px 0 0;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 20px ;
+}
+
+.header nav ul li a:hover{
+    transition: 0.2s ease-out;
+    color: #FFF;
+}
+
+
+.main {
+    margin-top: 100px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.main h1 {
+    position: relative;
+    font-family: 'Pacifico', cursive;
+    font-size: 68px;
+    font-weight: 700;
+    color: #2f3542;
+    padding: 30px 0;
+    cursor: default;
+}
+
+.main h1::before {  
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    width: 530px;
+    height: 80px;
+    margin-top: 70px;
+    border-radius: 20%;
+}
+  
+.main h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    width: 530px;
+    height: 80px;
+    margin-top: 70px;
+    border-radius: 20%;
+}
+
+.main h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    inset: 0 0 0 0;
+    background:  #9c764bd6;
+    z-index: -1;
+    transition: transform .3s ease-in-out;
+}
+
+
+.main .info2 video {
+    width: 650px;
+   
+    margin: 30px 10px;
+    box-shadow: 1px 1px 5px #535c68;
+    border-radius: 15px;
+    animation-name: right-left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.main .group {
+    width: 1000px;
+    height: 519px;
+    margin: 20px 0;
+    border-radius: 10%;
+    animation-name: down-up;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-image: url('../img/despre_noi/IMG_0653-2048x1365.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.main .group:hover {
+    transition: 0.5s all ease-in-out;
+    background-image: url('../img/despre_noi/foto2.jpg');
+}
+
+@keyframes down-up {
+    from {
+        transform: translateY(70px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.main h3 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+.main .members {
+    width: 100%;
+}
+
+.main .r {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+    padding: 50px 0 50px 0;
+}
+
+.main .box {
+    width: 500px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.main .box .img {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    padding: 5px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.main .box .sergiu{
+    background-image: url("../img/despre_noi/SERGIU-PLOP-resize.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.main .box .sergiu1 {
+    background-image: url("../img/despre_noi/SERGIU-DRUGUS-resize.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.main .box .andrei {
+    background-image: url("../img/despre_noi/resize-3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.main .box .dj{
+    background-image: url("../img/despre_noi/DJ\ Hanzee.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.main .box h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.main .box p {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 10px;
+    text-align: center;
+}
+.main .box2 p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 10px;
+    padding: 10px;
+    text-align: center;
+}
+.reveal-members {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal-members.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+hr {
+    margin: 100px 0;
+    border: 0;
+    width: 20%;
+    height: 4px;
+    background:  #9c764bd6;
+    border-radius: 50%;
+}
+
+
+.main .goal-contacts {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.main .goal-contacts .goal {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.main .goal-contacts .goal h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 20px 0 50px 0;
+}
+
+.main .goal-contacts .goal .goal-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 65%;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.main .goal-contacts .goal .goal-container img {
+    object-fit: cover;
+    height: 700px;
+    width: 600px;
+    position: relative;
+    box-shadow: 3px 3px 5px #535c68;
+}
+
+.main .goal-contacts .goal .goal-container .goal-text {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    position: absolute;
+    
+    background: #f5f6fa;
+    width: 45%;
+    height: auto;
+    margin-left: 20%;
+}
+
+.main .goal-contacts .goal .goal-container .goal-text p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 10px;
+
+}
+
+.reveal-goal-left {
+    position: relative;
+    transform: translateX(-20%);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal-goal-left.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal-goal-right {
+    position: relative;
+    transform: translateX(20%);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal-goal-right.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.main .goal-contacts h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 20px 0 50px 0;
+}
+
+
+
+
+
+/*FOOTER STYLING*/
+
+.footer {
+    width: 100%;
+    background-color:  #9c764bd6;
+    box-shadow: 1px 1px 5px #535c68;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.footer #logo-img {
+    width: 50px;
+    margin: 100px 0 20px 0;
+    border-radius: 50%;
+}
+
+.footer h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #2f3542;
+}
+
+.footer p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #2f3542;
+}
+
+.footer .icons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footer #icon {
+    width: 30px;
+    margin: 20px 10px;
+}
+
+
+
+@media (max-width:1300px) {
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%; 
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 0 0 0;
+        background-color:#9c764bd6 ;
+        border-radius: 2px;
+        box-shadow: 1px 1px 5px #535c68;
+        justify-content: center;
+        align-items: center;
+        z-index: 23;
+    }
+    
+    .header .logo {
+        height: 85px;
+        margin: 5px 0 10px 0;
+    }
+    
+    .header nav ul{
+        list-style: none;
+        display: flex;
+        flex-flow: column wrap;
+        line-height: 50px;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+    
+    .header nav ul li a{
+        text-decoration: none;
+        color: black;
+        padding: 0 0;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .main {
+        margin-top: 355px;
+    }
+   
+    .main h1 {
+        font-size: 50px;
+    }
+    
+    .main h1::before {  
+        width: 330px;
+        margin-top: 40px;
+    }
+      
+    .main h1:hover::before {
+        width: 330px;
+        margin-top: 40px;
+    }
+
+    .main .group {
+        width: calc(100% - 5px);
+        margin: 18px 0;
+    }
+
+    .main #group-photo {
+        width: calc(100% - 5px);
+        margin: 18px 0;
+    }
+    
+    .main h3 {
+        font-size: 50px;
+    }
+    
+    .main .r {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        padding: 0 0 0 0;
+    }
+    
+    .main .box {
+        margin: 10px 0;
+    }
+    
+  
+    hr {
+        margin: 100px 0;
+        border: 0;
+        width: 20%;
+        height: 4px;
+        background: #9c764bd6 ;
+        border-radius: 50%;
+    }
+    
+    
+    .main .goal-contacts {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    .main .goal-contacts .goal {
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    .main .goal-contacts .goal h2{
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: 400;
+        padding: 20px 0 50px 0;
+    }
+    
+    .main .goal-contacts .goal .goal-container {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 100%;
+        align-items: center;
+        margin-left: 0px;
+        padding: 20px 0;
+    }
+    
+    .main .goal-contacts .goal .goal-container img {
+        height: 500px;
+        position: relative;
+    }
+    
+    .main .goal-contacts .goal .goal-container .goal-text {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        position: relative;
+        box-shadow: none;
+        background: inherit;
+        width: 100%;
+        height: inherit;
+        margin-left: 0;
+    }
+    
+    .main .goal-contacts .goal .goal-container .goal-text p {
+        font-size: 18px;
+        text-align: center;
+        font-weight: 400;
+        padding: 10px 10px;
+    
+    }
+    
+  
+}

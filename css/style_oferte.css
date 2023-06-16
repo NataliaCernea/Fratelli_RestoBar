@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+  
+::-webkit-scrollbar-thumb {
+    background: #57606f;
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #2f3542;
+}
+
+/*HEADER STYLING*/
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 0 0 50px;
+    background-color: #9c764bd6 ;
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px #535c68;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 23;
+}
+
+.header .logo {
+    height: 85px;
+    margin: 5px 0 10px 20px;
+    border-radius: 50%;
+}
+
+.header nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    line-height: 100px;
+    margin: 0 100px 0 0;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    font-weight: 600;
+    font-size: 20px ;
+}
+
+.header nav ul li a:hover{
+    transition: 0.2s ease-out;
+    color: #FFF;
+}
+
+
+.main {
+    margin-top: 100px;
+}
+
+
+
+.main .activities {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.main .activities h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 20px 0 0 0;
+}
+
+.main .activities .box {
+    width: 90%;
+    margin: 50px 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    text-align: justify;
+}
+
+.main .activities .box img {
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin: 0 30px;
+    box-shadow: 1px 1px 5px #535c68;
+}
+
+.main .activities .box p {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+
+.main .activities .box1 .img.active {
+    animation-name: left-right;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.main .activities .box1 .p.active {
+    animation-name: right-left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.main .activities .box2 .img.active {
+    animation-name: right-left;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+.main .activities .box2 .p.active {
+    animation-name: left-right;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes left-right {
+    from {
+        transform: translateX(-70px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes right-left {
+    from {
+        transform: translatex(70px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/*FOOTER STYLING*/
+
+.footer {
+    width: 100%;
+    background-color:#9c764bd6 ;
+    box-shadow: 1px 1px 5px #535c68;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.footer #logo-img {
+    width: 50px;
+    margin: 100px 0 20px 0;
+    border-radius: 50%;
+}
+
+.footer h2 {
+    font-size: 25px;
+    font-weight: 500;
+    color: #2f3542;
+}
+
+.footer p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #2f3542;
+}
+
+.footer .icons {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footer #icon {
+    width: 30px;
+    margin: 20px 10px;
+}
+
+/*FOOTER STYLING*/
+
+@media (max-width:1300px) {
+    .header {
+        position: fixed;
+        top: 0;
+        width: 100%; 
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0 0 0 0;
+        background-color: #9c764bd6 ;
+        border-radius: 2px;
+        box-shadow: 1px 1px 5px #535c68;
+        justify-content: center;
+        align-items: center;
+        z-index: 23;
+    }
+    
+    .header .logo {
+        height: 85px;
+        margin: 5px 0 10px 0;
+    }
+    
+    .header nav ul{
+        list-style: none;
+        display: flex;
+        flex-flow: column wrap;
+        line-height: 50px;
+        margin: 0 0 0 0;
+        text-align: center;
+    }
+    
+    .header nav ul li a{
+        text-decoration: none;
+        color: black;
+        padding: 0 0;
+        font-weight: 600;
+        font-size: 15px;
+    }
+
+    .main {
+        margin-top: 355px;
+    }
+    
+    .main .activities1 h1 {
+        font-size: 40px;
+    }
+    
+    .main .activities1 .a h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .main .activities1 .a p {
+        width: 80%;
+        font-size: 18px;
+    }
+    
+    .main .gallery {
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    .main .gallery .r {
+        margin: 10px 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    
+    .main .gallery .r img {
+        width: 400px;
+        height: 380px;
+        margin: 5px 0;
+    }
+    
+    .main .activities h1 {
+        text-transform: uppercase;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 400;
+        padding: 10px;
+        margin: 20px 0 0 0;
+    }
+    
+    .main .activities .box {
+        width: 100%;
+        margin: 50px 0;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .main .activities .box img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 5px;
+        margin: 0 30px;
+        box-shadow: 1px 1px 5px #535c68;
+    }
+    
+    .main .activities .box p {
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px;
+    }
+}
